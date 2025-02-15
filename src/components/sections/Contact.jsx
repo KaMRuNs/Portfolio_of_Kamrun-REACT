@@ -7,16 +7,20 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const serviceID = "service_rizutn9";
+  const templateID = "template_l23c30g";
+  const publicKey = "1i0eJ0jFB6IIPHh6b";
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!serviceID || !templateID || !publicKey) {
+      alert("Missing EmailJS credentials. Please check your .env file.");
+      return;
+    }
+
     emailjs
-      .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        e.target,
-        import.meta.env.VITE_PUBLIC_KEY
-      )
+      .sendForm(serviceID, templateID, e.target, publicKey)
       .then((result) => {
         alert("Message Sent!");
         setFormData({ name: "", email: "", message: "" });
@@ -44,7 +48,7 @@ const Contact = () => {
                 placeholder="Name..."
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 onChange={(e) =>
-                  setFormData({ ...formData, name: e.target.value })
+                  setFormData({ formData, name: e.target.value })
                 }
               />
             </div>
@@ -58,7 +62,7 @@ const Contact = () => {
                 placeholder="example@gmail.com"
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
+                  setFormData({ formData, email: e.target.value })
                 }
               />
             </div>
@@ -72,7 +76,7 @@ const Contact = () => {
                 placeholder="Your Message..."
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 onChange={(e) =>
-                  setFormData({ ...formData, message: e.target.value })
+                  setFormData({ formData, message: e.target.value })
                 }
               />
             </div>
