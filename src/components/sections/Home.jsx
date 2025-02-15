@@ -13,10 +13,12 @@ const Home = () => {
             Hi! I'm Kamrun Nahar
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus ex
-            adipisci blanditiis cupiditate? Repellat iusto consectetur in culpa
-            ipsam animi minima expedita assumenda quibusdam ipsa, consequatur,
-            error sint impedit inventore.
+            A Computer Science & Engineering (CSE) student, web developer, and
+            tech enthusiast with a passion for creating interactive and
+            user-friendly web applications. With expertise in HTML, CSS,
+            JavaScript, React, and Tailwind CSS, I have built projects ranging
+            from e-commerce UI clones to dynamic web applications. <br />
+            🚀 Let's build something amazing together!
           </p>
           <div className="flex justify-center space-x-4">
             <a

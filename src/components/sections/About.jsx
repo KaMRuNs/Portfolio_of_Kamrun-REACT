@@ -18,7 +18,7 @@ const About = () => {
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
               Passionate developer with expertise in building scalable web
-              application s and creating innovative solutions.
+              applications and creating innovative solutions.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
@@ -60,23 +60,14 @@ const About = () => {
                   - International Islamic University, Chittagong (2023-2027)
                 </li>
                 <li>
-                  Relevant Coursework: Data Structures, Web Development, Cloud
-                  Computing....
+                  Relevant Coursework: Data Structures, Software Development,
+                  Cloud Computing....
                 </li>
               </ul>
             </div>
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">💼Work Experience</h3>
               <div className="space-y-4 text-gray-300">
-                <div>
-                  <h4 className="font-semibold">
-                    Software Engineer at ABC Corp. (2020-Present)
-                  </h4>
-                  <p>
-                    Developed and maintained microservices for cloud-based
-                    applications.
-                  </p>
-                </div>
                 <div>
                   <h4 className="font-semibold">
                     Intern at BrainMatrix Solution (2025)
