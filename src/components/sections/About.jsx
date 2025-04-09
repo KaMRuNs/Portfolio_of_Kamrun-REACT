@@ -2,7 +2,13 @@ import React from "react";
 import RevealOnScroll from "./RevealOnScroll";
 
 const About = () => {
-  const frontendSkills = ["React", "TailwindCSS", "DaisyUI", "BootStrap"];
+  const frontendSkills = [
+    "React",
+    "NEXT",
+    "TailwindCSS",
+    "DaisyUI",
+    "BootStrap",
+  ];
   const backendSkills = ["Node.js", "Python", "Django", "MongoDB", "MySQL"];
   return (
     <section
