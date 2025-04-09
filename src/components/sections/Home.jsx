@@ -16,8 +16,9 @@ const Home = () => {
             A Computer Science & Engineering (CSE) student, web developer, and
             tech enthusiast with a passion for creating interactive and
             user-friendly web applications. With expertise in HTML, CSS,
-            JavaScript, React, and Tailwind CSS, I have built projects ranging
-            from e-commerce UI clones to dynamic web applications. <br />
+            JavaScript, React JS, Next JS and Tailwind CSS, I have built
+            projects ranging from e-commerce UI clones to dynamic web
+            applications. <br />
             🚀 Let's build something amazing together!
           </p>
           <div className="flex justify-center space-x-4">
